@@ -20,7 +20,9 @@ type MongoInstance struct {
 var mg MongoInstance
 
 const dbName = "fiber-hrms"
-const mongoURI = "mongodb://mongoservice:27017/" + dbName
+
+// const mongoURI = "mongodb://mongoservice:27017/" + dbName
+const mongoURI = "mongodb+srv://Pranav18vk:Pranav@cluster0.htv0y.mongodb.net/?retryWrites=true&w=majority"
 
 type Employee struct {
 	ID     string  `json:"id,omitempty" bson:"_id,omitempty"`
